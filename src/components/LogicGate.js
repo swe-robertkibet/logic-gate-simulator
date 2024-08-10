@@ -1,6 +1,5 @@
 import React from 'react';
 import InputSwitch from './InputSwitch';
-import OutputDisplay from './OutputDisplay';
 import GateVisual from './GateVisual';
 
 const LogicGate = ({ type, operation }) => {
@@ -13,14 +12,13 @@ const LogicGate = ({ type, operation }) => {
         <div className="logic-gate">
             <h2>{type} Gate</h2>
             <div className="gate-content">
-                <div className="inputs">
-                    <InputSwitch value={input1} onChange={setInput1} label="Input 1" />
-                    {type !== 'NOT' && <InputSwitch value={input2} onChange={setInput2} label="Input 2" />}
+                <div className="gate-with-inputs">
+                    <div className="input-switches">
+                        <InputSwitch value={input1} onChange={setInput1} label="Input 1" />
+                        {type !== 'NOT' && <InputSwitch value={input2} onChange={setInput2} label="Input 2" />}
+                    </div>
+                    <GateVisual type={type} inputs={type === 'NOT' ? [input1] : [input1, input2]} output={output} />
                 </div>
-                <div className="gate-visual">
-                    <GateVisual type={type} />
-                </div>
-                <OutputDisplay value={output} />
             </div>
         </div>
     );
