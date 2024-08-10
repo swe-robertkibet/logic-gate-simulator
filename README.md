@@ -97,7 +97,3 @@ This project is open source and available under the [MIT License](LICENSE).
 For any queries or suggestions, please open an issue in the GitHub repository.
 
 Happy Simulating!
-
-```
-
-```
