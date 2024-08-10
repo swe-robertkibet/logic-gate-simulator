@@ -3,8 +3,8 @@
 ## Introduction
 
 This Logic Gate Simulator is an interactive web application designed to help users understand and visualize the behavior of basic logic gates. Inspired by concepts from digital electronics and devices, this project aims to bridge the gap between theoretical knowledge and practical understanding of logic gates.
+Here is the <a href = "https://logicsim.robertkibet.com/">live demo link</a>
 <img width="1280" alt="logic gates" src="https://github.com/user-attachments/assets/2113a8bc-bb29-4ea3-bd9b-aea1acfafd20">
-
 
 ## Motivation
 
