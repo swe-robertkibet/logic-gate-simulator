@@ -16,8 +16,8 @@ const GateVisual = ({ type, inputs, output }) => {
         OR: (
             <g>
                 <path d="M20,0 Q70,0 110,50 Q70,100 20,100 Q60,50 20,0 Z" fill={gateColor} strokeWidth={strokeWidth} stroke="black" />
-                <line x1="0" y1="25" x2="20" y2="25" stroke="black" strokeWidth={strokeWidth} />
-                <line x1="0" y1="75" x2="20" y2="75" stroke="black" strokeWidth={strokeWidth} />
+                <line x1="0" y1="25" x2="35" y2="25" stroke="black" strokeWidth={strokeWidth} /> {/* Changed x2 from 20 to 35 */}
+                <line x1="0" y1="75" x2="35" y2="75" stroke="black" strokeWidth={strokeWidth} /> {/* Changed x2 from 20 to 35 */}
                 <line x1="110" y1="50" x2="140" y2="50" stroke="black" strokeWidth={strokeWidth} />
             </g>
         ),
@@ -42,8 +42,8 @@ const GateVisual = ({ type, inputs, output }) => {
             <g>
                 <path d="M20,0 Q70,0 110,50 Q70,100 20,100 Q60,50 20,0 Z" fill={gateColor} strokeWidth={strokeWidth} stroke="black" />
                 <circle cx="120" cy="50" r="10" fill="white" strokeWidth={strokeWidth} stroke="black" />
-                <line x1="0" y1="25" x2="20" y2="25" stroke="black" strokeWidth={strokeWidth} />
-                <line x1="0" y1="75" x2="20" y2="75" stroke="black" strokeWidth={strokeWidth} />
+                <line x1="0" y1="25" x2="35" y2="25" stroke="black" strokeWidth={strokeWidth} /> {/* Changed x2 from 20 to 35 */}
+                <line x1="0" y1="75" x2="35" y2="75" stroke="black" strokeWidth={strokeWidth} /> {/* Changed x2 from 20 to 35 */}
                 <line x1="130" y1="50" x2="140" y2="50" stroke="black" strokeWidth={strokeWidth} />
             </g>
         ),
