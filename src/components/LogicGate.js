@@ -2,6 +2,7 @@ import React from 'react';
 import InputSwitch from './InputSwitch';
 import OutputDisplay from './OutputDisplay';
 import GateVisual from './GateVisual';
+import TruthTable from './TruthTable';
 
 const LogicGate = ({ type, operation }) => {
     const [input1, setInput1] = React.useState(false);
@@ -13,14 +14,17 @@ const LogicGate = ({ type, operation }) => {
         <div className="logic-gate">
             <h2>{type} Gate</h2>
             <div className="gate-content">
-                <div className="inputs">
-                    <InputSwitch value={input1} onChange={setInput1} label="Input 1" />
-                    {type !== 'NOT' && <InputSwitch value={input2} onChange={setInput2} label="Input 2" />}
+                <div className="gate-interactive">
+                    <div className="inputs">
+                        <InputSwitch value={input1} onChange={setInput1} label="Input 1" />
+                        {type !== 'NOT' && <InputSwitch value={input2} onChange={setInput2} label="Input 2" />}
+                    </div>
+                    <div className="gate-visual">
+                        <GateVisual type={type} inputs={[input1, input2]} output={output} />
+                    </div>
+                    <OutputDisplay value={output} />
                 </div>
-                <div className="gate-visual">
-                    <GateVisual type={type} inputs={[input1, input2]} output={output} />
-                </div>
-                <OutputDisplay value={output} />
+                <TruthTable type={type} operation={operation} />
             </div>
         </div>
     );

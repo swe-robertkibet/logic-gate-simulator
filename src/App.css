@@ -31,6 +31,9 @@ main {
   max-width: 500px;
 }
 
+.logic-gate h2 {
+  background-color: #ccc;
+}
 .gate-content {
   display: flex;
   flex-direction: column;
@@ -308,17 +311,56 @@ input:checked + .slider:before {
   margin-bottom: 20px;
 }
 
-.truth-table {
-  width: 100%;
-  max-width: 300px;
+/* ... (previous styles remain the same) ... */
+
+.logic-gate {
+  background-color: white;
   margin-top: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 1000px;
+}
+
+.gate-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.gate-interactive {
+  flex: 1;
+  max-width: 500px;
+  margin-right: 20px;
+}
+
+.gate-visual {
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.gate-visual svg {
+  width: 100%;
+  height: auto;
+}
+
+.truth-table {
+  flex: 1;
+  max-width: 300px;
 }
 
 .truth-table table {
   width: 100%;
   border-collapse: collapse;
-  background-color: white;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 10px;
 }
 
 .truth-table th,
@@ -330,13 +372,49 @@ input:checked + .slider:before {
 
 .truth-table th {
   background-color: #f2f2f2;
-  font-weight: bold;
 }
 
-.truth-table tr:nth-child(even) {
-  background-color: #f8f8f8;
+@media (max-width: 768px) {
+  .logic-gate {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 100px); /* Adjust based on your header height */
+  }
+
+  .gate-content {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .gate-interactive {
+    max-width: 100%;
+    margin-right: 0;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .truth-table {
+    max-width: 100%;
+  }
+
+  .inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .input-switch {
+    margin-bottom: 10px;
+  }
+
+  .output-display {
+    margin-top: 10px;
+  }
 }
 
-.truth-table tr:hover {
-  background-color: #e8e8e8;
-}
+/* ... (rest of the styles remain the same) ... */
