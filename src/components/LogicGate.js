@@ -15,11 +15,11 @@ const LogicGate = ({ type, operation }) => {
             <h2>{type} Gate</h2>
             <div className="gate-content">
                 <div className="gate-interactive">
-                    <div className="inputs">
-                        <InputSwitch value={input1} onChange={setInput1} label="Input 1" />
-                        {type !== 'NOT' && <InputSwitch value={input2} onChange={setInput2} label="Input 2" />}
-                    </div>
-                    <div className="gate-visual">
+                    <div className="gate-visual-container">
+                        <div className="inputs">
+                            <InputSwitch value={input1} onChange={setInput1} label="Input 1" />
+                            {type !== 'NOT' && <InputSwitch value={input2} onChange={setInput2} label="Input 2" />}
+                        </div>
                         <GateVisual type={type} inputs={[input1, input2]} output={output} />
                     </div>
                     <OutputDisplay value={output} />
