@@ -146,8 +146,6 @@ input:checked + .slider:before {
   border: 1px solid #ccc;
 }
 
-/* ... (keep the existing styles) ... */
-
 .gate-content {
   display: flex;
   flex-direction: column;
@@ -301,4 +299,44 @@ input:checked + .slider:before {
 
 .switch input:checked + .slider:before {
   transform: translateX(20px);
+}
+
+.gate-interactive {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.truth-table {
+  width: 100%;
+  max-width: 300px;
+  margin-top: 20px;
+}
+
+.truth-table table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.truth-table th,
+.truth-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+
+.truth-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.truth-table tr:nth-child(even) {
+  background-color: #f8f8f8;
+}
+
+.truth-table tr:hover {
+  background-color: #e8e8e8;
 }
