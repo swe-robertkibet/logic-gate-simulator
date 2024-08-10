@@ -5,11 +5,14 @@ const InputSwitch = ({ value, onChange, label }) => {
         <div className="input-switch">
             <label>
                 {label}:
-                <input
-                    type="checkbox"
-                    checked={value}
-                    onChange={(e) => onChange(e.target.checked)}
-                />
+                <div className="switch">
+                    <input
+                        type="checkbox"
+                        checked={value}
+                        onChange={(e) => onChange(e.target.checked)}
+                    />
+                    <span className="slider"></span>
+                </div>
             </label>
         </div>
     );
