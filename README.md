@@ -1,10 +1,31 @@
 # Logic Gate Simulator
 
+![Logic Gates](https://github.com/user-attachments/assets/2113a8bc-bb29-4ea3-bd9b-aea1acfafd20)
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Live Demo](#live-demo)
+- [Motivation](#motivation)
+- [Features](#features)
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Future Enhancements](#future-enhancements)
+- [License](#license)
+- [Acknowledgments](#acknowledgments)
+- [Contact](#contact)
+
 ## Introduction
 
-This Logic Gate Simulator is an interactive web application designed to help users understand and visualize the behavior of basic logic gates. Inspired by concepts from digital electronics and devices, this project aims to bridge the gap between theoretical knowledge and practical understanding of logic gates.
-Here is the <a href = "https://logicsim.robertkibet.com/">live demo link</a>
-<img width="1280" alt="logic gates" src="https://github.com/user-attachments/assets/2113a8bc-bb29-4ea3-bd9b-aea1acfafd20">
+The Logic Gate Simulator is an interactive web application designed to help users understand and visualize the behavior of basic logic gates. Inspired by concepts from digital electronics and devices, this project bridges the gap between theoretical knowledge and practical understanding of logic gates.
+
+## Live Demo
+
+Experience the Logic Gate Simulator in action: [Live Demo](https://logicsim.robertkibet.com/)
 
 ## Motivation
 
@@ -37,35 +58,27 @@ This project was born out of the fascinating world of digital electronics and de
 
 1. Clone the repository:
 
-```
-
-git clone https://github.com/swe-robertkibet/logic-gate-simulator.git
-
-```
+   ```
+   git clone https://github.com/swe-robertkibet/logic-gate-simulator.git
+   ```
 
 2. Navigate to the project directory:
 
-```
-
-cd logic-gate-simulator
-
-```
+   ```
+   cd logic-gate-simulator
+   ```
 
 3. Install dependencies:
 
-```
-
-npm install
-
-```
+   ```
+   npm install
+   ```
 
 4. Start the development server:
 
-```
-
-npm start
-
-```
+   ```
+   npm start
+   ```
 
 5. Open your browser and visit `http://localhost:3000`
 
